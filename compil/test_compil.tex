@@ -39,28 +39,44 @@
          {î}{{\^i}}1    
 }
 
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+
 \begin{document}
 
 
-%\element{general}{
-\begin{question}{var}
+\element{opArith}{
+\begin{question}{opArith01Q01}
+	On exécute l'instruction ci-après. Quel est l'affichage attendu ?
 	\begin{lstlisting}
-	def toyt : 
-	    return nono
+	>>> 4%2
 	\end{lstlisting}
-	\begin{reponses}
-	\bonne{L’Europe}
-	\mauvaise{L’Afrique}
-	\mauvaise{L’Asie}
-	\mauvaise{La planète Mars}
-\end{reponses}
-\end{question}
+	\begin{reponseshoriz}
+	\bonne{0}
+	\mauvaise{1}
+	\mauvaise{2}
+	\mauvaise{4}
+\end{reponseshoriz}
+\end{question}}
+
+\element{opArith}{
+\begin{question}{opArith01Q02}
+	On exécute l'instruction ci-après. Quel est l'affichage attendu ?
+	\begin{lstlisting}
+	>>> 4%2
+	\end{lstlisting}
+	\begin{reponseshoriz}
+	\bonne{1} 
+	\mauvaise{0}
+	\mauvaise{2}
+	\mauvaise{4}
+\end{reponseshoriz}
+\end{question}}
 %}
 
+\restituegroupe{opArith}
 
-\exemplaire{2}{
-%\restituegroupe{general}
-}
 TEST
 
 \end{document}
