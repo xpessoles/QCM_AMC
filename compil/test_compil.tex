@@ -66,6 +66,7 @@
 \begin{question}{OpEl02} % nreveret
 	On a saisi le code suivant : 
 	\lstinputlisting{OpEl_02.py}
+	Quelle instruction permet d’afficher le message \lstinline{1 + 1 = 2} ?
 \begin{multicols}{4}	
 	\begin{reponses}	
 	\bonne{\lstinline{print(a + ' = ' + c)}}
@@ -76,9 +77,22 @@
 	\end{multicols}
 \end{question}
 
+\begin{question}{OpEl03} % nreveret
+	On a saisi le code suivant : 
+	\lstinputlisting{OpEl_03.py}
+	Quelles sont les valeurs de a et b à la fin du programme ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{a = 5} et \lstinline{b = 8}}
+	\mauvaise{\lstinline{a = 8} et \lstinline{b = 5}}
+	\mauvaise{\lstinline{a = 8} et \lstinline{b = 13}}
+	\mauvaise{\lstinline{a = 13} et \lstinline{b = 5}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
 
 
-\begin{question}{}%
+\begin{question}{OpEl}%
 
 \begin{multicols}{4}	
 	\begin{reponses}	
@@ -227,6 +241,125 @@
 }
 
 
+
+\element{StructuresConditionnelles}{
+\begin{question}{}
+
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+
+
+\element{StructuresTantQue}{
+\begin{question}{TtQue01}  % genumsi nreveret
+On a saisi le code suivant :
+	\lstinputlisting{TtQue_01.py}
+	Quelle est la valeur de \lstinline{n} après l’exécution du code ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{1.0}
+	\mauvaise{4.0}
+	\mauvaise{2.0}
+	\mauvaise{0.5}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+\begin{question}{}
+
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+\element{StructuresFor}{
+\begin{question}{for01}  % genumsi nreveret
+On souhaite écrire un programme affichant tous les entiers multiples de 3 entre 6 et 288 inclus.
+Quel code est correct ?
+	\begin{multicols}{2}	
+	\begin{reponses}	
+	\bonne{\lstinputlisting{For_01_d.py}}
+	\mauvaise{\lstinputlisting{For_01_a.py}}
+	\mauvaise{\lstinputlisting{For_01_b.py}}
+	\mauvaise{\lstinputlisting{For_01_c.py}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+
+\begin{question}{for02}  % genumsi nreveret
+	On a saisi le code suivant :
+	\lstinputlisting{For_02.py}
+	Quelle est la valeur de \lstinline{a} après l’exécution du code ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{26}
+	\mauvaise{18}
+	\mauvaise{18.0}
+	\mauvaise{26.0}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+\begin{question}{for}
+
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+
+\element{listes}{
+\begin{question}{list01}  % genumsi nreveret
+Voici une fonction Python de recherche d'un maximum :
+
+Avec quelle précondition sur la liste \lstinline{t}, la postcondition « <i>m est un élément maximum de la liste s</i> » n'est-elle pas assurée ?</p>
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+\element{FonctionsEtListes}{
+\begin{question}{fonclist01}  % genumsi nreveret
+Voici une fonction Python de recherche d'un maximum :
+\lstinputlisting{FoncList_01.py}
+Avec quelle précondition sur la liste \lstinline{t}, la postcondition `` \lstinline{m} est un élément maximum de la liste \lstinline{s}'' n'est-elle pas assurée ?
+	\begin{reponses}
+	\bonne{Tout élément de \lstinline{t} est un entier supérieur ou égal à -2.}
+	\mauvaise{Tout élément de \lstinline{t} est un entier positif ou nul.}
+	\mauvaise{Tout élément de \lstinline{t} est un entier supérieur ou égal à 11.}
+	\mauvaise{Tout élément de \lstinline{t} est un entier strictement supérieur à -2.}
+	\end{reponses}
+\end{question}
+}
+
+
+
 \element{}{
 \begin{question}{}
 
@@ -240,6 +373,7 @@
 	\end{multicols}
 \end{question}
 }
+
 
 
 
@@ -277,4 +411,16 @@
 
 	\melangegroupe{ChainesCaracteres}
 	\restituegroupe{ChainesCaracteres}
+	
+	\melangegroupe{StructuresConditionnelles}
+	\restituegroupe{StructuresConditionnelles}
+	
+	\melangegroupe{StructuresTantQue}
+	\restituegroupe{StructuresTantQue}
+	
+	\melangegroupe{StructuresFor}
+	\restituegroupe{StructuresFor}
+	
+	\melangegroupe{FonctionsEtListes}
+	\restituegroupe{FonctionsEtListes}
 \end{document}
