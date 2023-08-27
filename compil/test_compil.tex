@@ -8,7 +8,9 @@
 %\input{\repRel/Style/macros_SII}
 %%\input{\repRel/Style/environment}
 
-\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
+%\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
+\usepackage[francais,bloc,completemulti,catalog]{automultiplechoice} %ensemble
+\usepackage{multicol}
 
 %% Pour le python %%
 \usepackage{listingsutf8}
@@ -38,45 +40,241 @@
          {ù}{{\`u}}1    
          {î}{{\^i}}1    
 }
+\lstset{inputpath=code}
 
-
-\usepackage[utf8x]{inputenc}
-\usepackage[T1]{fontenc}
+%\usepackage[utf8x]{inputenc}
+%\usepackage[T1]{fontenc}
 
 \begin{document}
 
 
-\element{opArith}{
-\begin{question}{opArith01Q01}
+\element{OperationsElementaires}{
+\begin{question}{OpEl01}% genumsi nreveret
+	On souhaite écrire un programme calculant le triple d'un nombre décimal et affichant le résultat. On a saisi le code suivant :
+	\lstinputlisting{OpEl_01.py}
+	Quel va être le résultat affiché ?
+\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{555}
+	\mauvaise{\lstinline{nombrenombrenombre}}
+	\mauvaise{\lstinline{15}}
+	\mauvaise{\lstinline{15.0}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+\begin{question}{OpEl02} % nreveret
+	On a saisi le code suivant : 
+	\lstinputlisting{OpEl_02.py}
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{print(a + ' = ' + c)}}
+	\mauvaise{\lstinline{print(a + ' = ' + d)}}
+	\mauvaise{\lstinline{print(b + ' = ' + c)}}
+	\mauvaise{\lstinline{print(b + ' = ' + d)}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+
+
+\begin{question}{}%
+
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+
+\element{OperationsArithmetiques}{
+\begin{question}{OpAr01}
 	On exécute l'instruction ci-après. Quel est l'affichage attendu ?
-	\begin{lstlisting}
-	>>> 4%2
-	\end{lstlisting}
-	\begin{reponseshoriz}
+	\lstinputlisting{oparith01.py}
+	\begin{multicols}{4}
+	\begin{reponses}	
 	\bonne{0}
 	\mauvaise{1}
 	\mauvaise{2}
 	\mauvaise{4}
-	\end{reponseshoriz}
+	\end{reponses}
+	\end{multicols}
 \end{question}}
 
-%\element{opArith}{
-%\begin{question}{opArith01Q02}
-%	On exécute l'instruction ci-après. Quel est l'affichage attendu ?
-%	\begin{lstlisting}
-%	>>> 4%2
-%	\end{lstlisting}
-%	\begin{reponseshoriz}
-%	\bonne{1} 
-%	\mauvaise{0}
-%	\mauvaise{2}
-%	\mauvaise{4}
-%\end{reponseshoriz}
-%\end{question}}
-%%}
 
-\restituegroupe{opArith}
+\element{CodageEntiers}{
+\begin{question}{entiers 01} % genumsi nreveret
+	Quel est l'entier positif codé en base 2 sur 8 bits par le code 0011 1010 ?
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{58}
+	\mauvaise{45}
+	\mauvaise{25}
+	\mauvaise{-12}
+	\end{reponses}
+	\end{multicols}
+\end{question}
 
-TEST
+\begin{question}{entiers 02} % genumsi nreveret
+	Le résultat de l'addition des deux nombres binaires 1101 et 0101 est:
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{10010}
+	\mauvaise{10110}
+	\mauvaise{10011}
+	\mauvaise{11010}
+	\end{reponses}
+	\end{multicols}
+\end{question}
 
+\begin{question}{entiers 03} % genumsi nreveret
+	Convertir  la valeur décimale 155 en binaire (sur un octet).
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{10011011}
+	\mauvaise{11011011}
+	\mauvaise{01111111}
+	\mauvaise{10010111}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+\element{CodageEntiersRelatifs}{
+\begin{question}{relatifs 01}% genumsi nreveret
+	Quel est l'entier relatif codé en complément à 2 sur un octet par le code 1111 1111 ?
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{-1}
+	\mauvaise{255}
+	\mauvaise{127}
+	\mauvaise{45}
+	\end{reponses}
+	\end{multicols}
+\end{question}}
+
+
+\element{CodageHexa}{
+\begin{question}{hexa 01} % genumsi nreveret
+	Convertir  la valeur décimale 195 en hexadécimal.
+	\begin{multicols}{4}
+	\begin{reponses}
+	\bonne{C3}
+	\mauvaise{A5}
+	\mauvaise{B9}
+	\mauvaise{C9}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+\begin{question}{hexa 01}
+
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+\element{AlgebreBoole}{
+\begin{question}{boole 01}% genumsi nreveret
+	En logique (algèbre de Boole), l'expression: \lstinline{not (A or B)} est équivalente à  :
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{\lstinline{(not A) and (not B)}}
+	\mauvaise{\lstinline{(not A) or (not B)}}
+	\mauvaise{\lstinline{A or B}}
+	\mauvaise{\lstinline{A and B}}
+	\end{reponses}
+	\end{multicols}
+\end{question}}
+
+
+\element{ChainesCaracteres}{
+\begin{question}{str01} % genumsi nreveret
+	On a saisi le code suivant :\lstinline{mot = 'première'}. Quelle affirmation est vraie ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{mot[7]} vaut \lstinline{'e'}}
+	\mauvaise{\lstinline{mot[1]} vaut \lstinline{'p'}}
+	\mauvaise{\lstinline{len(mot)} vaut 7}
+	\mauvaise{\lstinline{len(mot)} vaut 6}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+
+\begin{question}{str}
+
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+
+\element{}{
+\begin{question}{}
+
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
+
+
+
+%
+%\begin{question}{bin_}
+%	\begin{multicols}{4}
+%	\begin{reponses}	
+%	\bonne{}
+%	\mauvaise{}
+%	\mauvaise{}
+%	\mauvaise{}
+%	\end{reponses}
+%	\end{multicols}
+%\end{question}
+%}
+
+
+	\melangegroupe{OperationsElementaires}
+	\restituegroupe{OperationsElementaires}
+
+	\melangegroupe{OperationsArithmetiques}
+	\restituegroupe{OperationsArithmetiques}
+
+	\melangegroupe{CodageEntiers}
+	\restituegroupe{CodageEntiers}
+	
+	\melangegroupe{CodageEntiersRelatifs}
+	\restituegroupe{CodageEntiersRelatifs}
+
+	\melangegroupe{CodageHexa}
+	\restituegroupe{CodageHexa}
+	
+	\melangegroupe{AlgebreBoole}
+	\restituegroupe{AlgebreBoole}
+
+	\melangegroupe{ChainesCaracteres}
+	\restituegroupe{ChainesCaracteres}
 \end{document}
