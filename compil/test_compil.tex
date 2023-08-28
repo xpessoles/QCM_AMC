@@ -200,7 +200,7 @@
 }
 
 \element{AlgebreBoole}{
-\begin{question}{boole 01}% genumsi nreveret
+\begin{question}{boole01}% genumsi nreveret
 	En logique (algèbre de Boole), l'expression: \lstinline{not (A or B)} est équivalente à  :
 	\begin{multicols}{4}
 	\begin{reponses}	
@@ -210,12 +210,37 @@
 	\mauvaise{\lstinline{A and B}}
 	\end{reponses}
 	\end{multicols}
-\end{question}}
+\end{question}
+
+\begin{question}{boole02}% genumsi nreveret
+	Laquelle de ces propriétés est toujours vraie ?
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{\lstinline{a and  (not a) == False}}
+	\mauvaise{\lstinline{a and (not a) == True}}
+	\mauvaise{\lstinline{a and  (not a) == not  a}}
+	\mauvaise{\lstinline{a and  (not a) == a}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+
+\begin{question}{boole }% genumsi nreveret
+
+	\begin{multicols}{4}
+	\begin{reponses}	
+	\bonne{}
+	\mauvaise{}
+	\mauvaise{}
+	\mauvaise{}
+	\end{reponses}
+	\end{multicols}
+\end{question}
+}
 
 
 \element{ChainesCaracteres}{
 \begin{question}{str01} % genumsi nreveret
-	On a saisi le code suivant :\lstinline{mot = 'première'}. Quelle affirmation est vraie ?
+	On a saisi le code suivant : \lstinline{mot = 'première'}. Quelle affirmation est vraie ?
 \begin{multicols}{4}	
 	\begin{reponses}	
 	\bonne{\lstinline{mot[7]} vaut \lstinline{'e'}}
@@ -226,8 +251,20 @@
 	\end{multicols}
 \end{question}
 
+\begin{question}{str}  % genumsi nreveret
+	Quelle est le résultat de :  \lstinline{'orange'[-3] ?}
+\begin{multicols}{4}	
+	\begin{reponses}
+	\bonne{\lstinline{'n'}}
+	\mauvaise{\lstinline{'e'}}
+	\mauvaise{\lstinline{'g'}}
+	\mauvaise{\lstinline{Error : Negative index}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
 
-\begin{question}{str}
+
+\begin{question}{str}  % genumsi nreveret
 
 \begin{multicols}{4}	
 	\begin{reponses}	
@@ -330,9 +367,20 @@ Quel code est correct ?
 
 \element{listes}{
 \begin{question}{list01}  % genumsi nreveret
-Voici une fonction Python de recherche d'un maximum :
+	Quelle est le résultat de :  \lstinline{[ (a,b) for a in range(3) for b in range(a) ]} ?
+\begin{multicols}{4}	
+	\begin{reponses}	
+	\bonne{\lstinline{[(1,0),(2,0),(2,1)]}}
+	\mauvaise{\lstinline{[(1,0),(2,1),(2,1)]}}
+	\mauvaise{\lstinline{[(1,0),(2,1),(3,2)]}}
+	\mauvaise{\lstinline{[(0,0),(1,1),(2,2)]}}
+	\end{reponses}
+	\end{multicols}
+\end{question}
 
-Avec quelle précondition sur la liste \lstinline{t}, la postcondition « <i>m est un élément maximum de la liste s</i> » n'est-elle pas assurée ?</p>
+
+\begin{question}{list01}  % genumsi nreveret
+
 \begin{multicols}{4}	
 	\begin{reponses}	
 	\bonne{}
@@ -356,6 +404,18 @@ Avec quelle précondition sur la liste \lstinline{t}, la postcondition `` \lstin
 	\mauvaise{Tout élément de \lstinline{t} est un entier strictement supérieur à -2.}
 	\end{reponses}
 \end{question}
+
+\begin{question}{fonclist02}  % genumsi nreveret
+On dispose d'un tableau d'entiers, ordonné en ordre croissant. On désire connaître le nombre de valeurs distinctes contenues dans ce tableau. 
+Quelle est la fonction qui ne convient pas ? 
+	\begin{reponses}	
+	\bonne{\lstinputlisting{fonclist_02_d.py}}
+	\mauvaise{\lstinputlisting{fonclist_02_a.py}}
+	\mauvaise{\lstinputlisting{fonclist_02_b.py}}
+	\mauvaise{\lstinputlisting{fonclist_02_c.py}}
+	\end{reponses}
+\end{question}
+
 }
 
 

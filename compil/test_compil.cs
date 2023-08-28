@@ -42,43 +42,58 @@
 \answer{0/2:case:hexa 01:10,2}{}
 \answer{0/2:case:hexa 01:10,3}{}
 \answer{0/2:case:hexa 01:10,4}{}
-\answer{0/2:case:boole 01:11,1}{}
-\answer{0/2:case:boole 01:11,2}{}
-\answer{0/2:case:boole 01:11,3}{}
-\answer{0/2:case:boole 01:11,4}{}
-\answer{0/2:case:str01:12,1}{}
-\answer{0/2:case:str01:12,2}{}
-\answer{0/2:case:str01:12,3}{}
-\answer{0/2:case:str01:12,4}{}
-\answer{0/2:case:str:13,1}{}
-\answer{0/2:case:str:13,2}{}
-\answer{0/2:case:str:13,3}{}
-\answer{0/2:case:str:13,4}{}
-\answer{0/2:case::14,1}{}
-\answer{0/2:case::14,2}{}
-\answer{0/2:case::14,3}{}
-\answer{0/2:case::14,4}{}
-\answer{0/2:case:TtQue01:15,1}{}
-\answer{0/2:case:TtQue01:15,2}{}
-\answer{0/2:case:TtQue01:15,3}{}
-\answer{0/2:case:TtQue01:15,4}{}
-\answer{0/2:case::14,1}{}
-\answer{0/2:case::14,2}{}
-\answer{0/2:case::14,3}{}
-\answer{0/2:case::14,4}{}
-\answer{0/2:case:for01:16,1}{}
-\answer{0/2:case:for01:16,2}{}
-\answer{0/2:case:for01:16,3}{}
-\answer{0/2:case:for01:16,4}{}
-\answer{0/2:case:for02:17,1}{}
-\answer{0/2:case:for02:17,2}{}
-\answer{0/2:case:for02:17,3}{}
-\answer{0/2:case:for02:17,4}{}
-\answer{0/2:case:for:18,1}{}
-\answer{0/2:case:for:18,2}{}
-\answer{0/2:case:for:18,3}{}
-\answer{0/2:case:for:18,4}{}
-\answer{0/3:case:fonclist01:19,1}{}
-\answer{0/3:case:fonclist01:19,2}{}
-\answer{0/3:case:fonclist01:19,3}{}
-\answer{0/3:case:fonclist01:19,4}{}
+\answer{0/2:case:boole01:11,1}{}
+\answer{0/2:case:boole01:11,2}{}
+\answer{0/2:case:boole01:11,3}{}
+\answer{0/2:case:boole01:11,4}{}
+\answer{0/2:case:boole02:12,1}{}
+\answer{0/2:case:boole02:12,2}{}
+\answer{0/2:case:boole02:12,3}{}
+\answer{0/2:case:boole02:12,4}{}
+\answer{0/2:case:boole :13,1}{}
+\answer{0/2:case:boole :13,2}{}
+\answer{0/2:case:boole :13,3}{}
+\answer{0/2:case:boole :13,4}{}
+\answer{0/2:case:str01:14,1}{}
+\answer{0/2:case:str01:14,2}{}
+\answer{0/2:case:str01:14,3}{}
+\answer{0/2:case:str01:14,4}{}
+\answer{0/2:case:str:15,1}{}
+\answer{0/2:case:str:15,2}{}
+\answer{0/2:case:str:15,3}{}
+\answer{0/2:case:str:15,4}{}
+\answer{0/2:case:str:15,1}{}
+\answer{0/2:case:str:15,2}{}
+\answer{0/2:case:str:15,3}{}
+\answer{0/2:case:str:15,4}{}
+\answer{0/2:case::16,1}{}
+\answer{0/2:case::16,2}{}
+\answer{0/2:case::16,3}{}
+\answer{0/2:case::16,4}{}
+\answer{0/2:case:TtQue01:17,1}{}
+\answer{0/2:case:TtQue01:17,2}{}
+\answer{0/2:case:TtQue01:17,3}{}
+\answer{0/2:case:TtQue01:17,4}{}
+\answer{0/2:case::16,1}{}
+\answer{0/2:case::16,2}{}
+\answer{0/2:case::16,3}{}
+\answer{0/2:case::16,4}{}
+\answer{0/2:case:for01:18,1}{}
+\answer{0/2:case:for01:18,2}{}
+\answer{0/2:case:for01:18,3}{}
+\answer{0/3:case:for01:18,4}{}
+\answer{0/3:case:for02:19,1}{}
+\answer{0/3:case:for02:19,2}{}
+\answer{0/3:case:for02:19,3}{}
+\answer{0/3:case:for02:19,4}{}
+\answer{0/3:case:for:20,1}{}
+\answer{0/3:case:for:20,2}{}
+\answer{0/3:case:for:20,3}{}
+\answer{0/3:case:for:20,4}{}
+\answer{0/3:case:fonclist01:21,1}{}
+\answer{0/3:case:fonclist01:21,2}{}
+\answer{0/3:case:fonclist01:21,3}{}
+\answer{0/3:case:fonclist01:21,4}{}
+\answer{0/3:case:fonclist02:22,1}{}
+\answer{0/3:case:fonclist02:22,2}{}
+\answer{0/3:case:fonclist02:22,3}{}
