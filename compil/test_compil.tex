@@ -47,376 +47,22 @@
 
 \begin{document}
 
-
-\element{OperationsElementaires}{
-\begin{question}{OpEl01}% genumsi nreveret
-	On souhaite écrire un programme calculant le triple d'un nombre décimal et affichant le résultat. On a saisi le code suivant :
-	\lstinputlisting{OpEl_01.py}
-	Quel va être le résultat affiché ?
-\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{555}
-	\mauvaise{\lstinline{nombrenombrenombre}}
-	\mauvaise{\lstinline{15}}
-	\mauvaise{\lstinline{15.0}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{OpEl02} % nreveret
-	On a saisi le code suivant : 
-	\lstinputlisting{OpEl_02.py}
-	Quelle instruction permet d’afficher le message \lstinline{1 + 1 = 2} ?
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{\lstinline{print(a + ' = ' + c)}}
-	\mauvaise{\lstinline{print(a + ' = ' + d)}}
-	\mauvaise{\lstinline{print(b + ' = ' + c)}}
-	\mauvaise{\lstinline{print(b + ' = ' + d)}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{OpEl03} % nreveret
-	On a saisi le code suivant : 
-	\lstinputlisting{OpEl_03.py}
-	Quelles sont les valeurs de a et b à la fin du programme ?
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{\lstinline{a = 5} et \lstinline{b = 8}}
-	\mauvaise{\lstinline{a = 8} et \lstinline{b = 5}}
-	\mauvaise{\lstinline{a = 8} et \lstinline{b = 13}}
-	\mauvaise{\lstinline{a = 13} et \lstinline{b = 5}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
+\input{01_OperationsElementaires}
+\input{02_OperationsArithmetiques}
+\input{03_Fonctions}
+\input{04_CodageEntiers}
+\input{05_CodageEntiersRelatifs}
+\input{06_CodageHexa}
+\input{07_AlgebreBoole}
+\input{08_ChainesCaracteres}
+\input{09_StructuresTantQue}
+\input{10_StructuresConditionnelles}
+\input{11_StructuresFor}
+\input{12_Listes}
+\input{13_FonctionsEtListes}
+\input{14_ListesComprehension}
 
 
-\begin{question}{OpEl}%
-
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-
-\element{OperationsArithmetiques}{
-\begin{question}{OpAr01}
-	On exécute l'instruction ci-après. Quel est l'affichage attendu ?
-	\lstinputlisting{oparith01.py}
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{0}
-	\mauvaise{1}
-	\mauvaise{2}
-	\mauvaise{4}
-	\end{reponses}
-	\end{multicols}
-\end{question}}
-
-
-\element{CodageEntiers}{
-\begin{question}{entiers 01} % genumsi nreveret
-	Quel est l'entier positif codé en base 2 sur 8 bits par le code 0011 1010 ?
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{58}
-	\mauvaise{45}
-	\mauvaise{25}
-	\mauvaise{-12}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{entiers 02} % genumsi nreveret
-	Le résultat de l'addition des deux nombres binaires 1101 et 0101 est:
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{10010}
-	\mauvaise{10110}
-	\mauvaise{10011}
-	\mauvaise{11010}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{entiers 03} % genumsi nreveret
-	Convertir  la valeur décimale 155 en binaire (sur un octet).
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{10011011}
-	\mauvaise{11011011}
-	\mauvaise{01111111}
-	\mauvaise{10010111}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-\element{CodageEntiersRelatifs}{
-\begin{question}{relatifs 01}% genumsi nreveret
-	Quel est l'entier relatif codé en complément à 2 sur un octet par le code 1111 1111 ?
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{-1}
-	\mauvaise{255}
-	\mauvaise{127}
-	\mauvaise{45}
-	\end{reponses}
-	\end{multicols}
-\end{question}}
-
-
-\element{CodageHexa}{
-\begin{question}{hexa 01} % genumsi nreveret
-	Convertir  la valeur décimale 195 en hexadécimal.
-	\begin{multicols}{4}
-	\begin{reponses}
-	\bonne{C3}
-	\mauvaise{A5}
-	\mauvaise{B9}
-	\mauvaise{C9}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{hexa 01}
-
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-\element{AlgebreBoole}{
-\begin{question}{boole01}% genumsi nreveret
-	En logique (algèbre de Boole), l'expression: \lstinline{not (A or B)} est équivalente à  :
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{\lstinline{(not A) and (not B)}}
-	\mauvaise{\lstinline{(not A) or (not B)}}
-	\mauvaise{\lstinline{A or B}}
-	\mauvaise{\lstinline{A and B}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{boole02}% genumsi nreveret
-	Laquelle de ces propriétés est toujours vraie ?
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{\lstinline{a and  (not a) == False}}
-	\mauvaise{\lstinline{a and (not a) == True}}
-	\mauvaise{\lstinline{a and  (not a) == not  a}}
-	\mauvaise{\lstinline{a and  (not a) == a}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{boole }% genumsi nreveret
-
-	\begin{multicols}{4}
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-
-\element{ChainesCaracteres}{
-\begin{question}{str01} % genumsi nreveret
-	On a saisi le code suivant : \lstinline{mot = 'première'}. Quelle affirmation est vraie ?
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{\lstinline{mot[7]} vaut \lstinline{'e'}}
-	\mauvaise{\lstinline{mot[1]} vaut \lstinline{'p'}}
-	\mauvaise{\lstinline{len(mot)} vaut 7}
-	\mauvaise{\lstinline{len(mot)} vaut 6}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{str}  % genumsi nreveret
-	Quelle est le résultat de :  \lstinline{'orange'[-3] ?}
-\begin{multicols}{4}	
-	\begin{reponses}
-	\bonne{\lstinline{'n'}}
-	\mauvaise{\lstinline{'e'}}
-	\mauvaise{\lstinline{'g'}}
-	\mauvaise{\lstinline{Error : Negative index}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-
-\begin{question}{str}  % genumsi nreveret
-
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-
-
-\element{StructuresConditionnelles}{
-\begin{question}{}
-
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-
-
-\element{StructuresTantQue}{
-\begin{question}{TtQue01}  % genumsi nreveret
-On a saisi le code suivant :
-	\lstinputlisting{TtQue_01.py}
-	Quelle est la valeur de \lstinline{n} après l’exécution du code ?
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{1.0}
-	\mauvaise{4.0}
-	\mauvaise{2.0}
-	\mauvaise{0.5}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-\begin{question}{}
-
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-\element{StructuresFor}{
-\begin{question}{for01}  % genumsi nreveret
-On souhaite écrire un programme affichant tous les entiers multiples de 3 entre 6 et 288 inclus.
-Quel code est correct ?
-	\begin{multicols}{2}	
-	\begin{reponses}	
-	\bonne{\lstinputlisting{For_01_d.py}}
-	\mauvaise{\lstinputlisting{For_01_a.py}}
-	\mauvaise{\lstinputlisting{For_01_b.py}}
-	\mauvaise{\lstinputlisting{For_01_c.py}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-
-\begin{question}{for02}  % genumsi nreveret
-	On a saisi le code suivant :
-	\lstinputlisting{For_02.py}
-	Quelle est la valeur de \lstinline{a} après l’exécution du code ?
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{26}
-	\mauvaise{18}
-	\mauvaise{18.0}
-	\mauvaise{26.0}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-\begin{question}{for}
-
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-
-\element{listes}{
-\begin{question}{list01}  % genumsi nreveret
-	Quelle est le résultat de :  \lstinline{[ (a,b) for a in range(3) for b in range(a) ]} ?
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{\lstinline{[(1,0),(2,0),(2,1)]}}
-	\mauvaise{\lstinline{[(1,0),(2,1),(2,1)]}}
-	\mauvaise{\lstinline{[(1,0),(2,1),(3,2)]}}
-	\mauvaise{\lstinline{[(0,0),(1,1),(2,2)]}}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-
-
-\begin{question}{list01}  % genumsi nreveret
-
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
-	\end{reponses}
-	\end{multicols}
-\end{question}
-}
-
-\element{FonctionsEtListes}{
-\begin{question}{fonclist01}  % genumsi nreveret
-Voici une fonction Python de recherche d'un maximum :
-\lstinputlisting{FoncList_01.py}
-Avec quelle précondition sur la liste \lstinline{t}, la postcondition `` \lstinline{m} est un élément maximum de la liste \lstinline{s}'' n'est-elle pas assurée ?
-	\begin{reponses}
-	\bonne{Tout élément de \lstinline{t} est un entier supérieur ou égal à -2.}
-	\mauvaise{Tout élément de \lstinline{t} est un entier positif ou nul.}
-	\mauvaise{Tout élément de \lstinline{t} est un entier supérieur ou égal à 11.}
-	\mauvaise{Tout élément de \lstinline{t} est un entier strictement supérieur à -2.}
-	\end{reponses}
-\end{question}
-
-\begin{question}{fonclist02}  % genumsi nreveret
-On dispose d'un tableau d'entiers, ordonné en ordre croissant. On désire connaître le nombre de valeurs distinctes contenues dans ce tableau. 
-Quelle est la fonction qui ne convient pas ? 
-	\begin{reponses}	
-	\bonne{\lstinputlisting{fonclist_02_d.py}}
-	\mauvaise{\lstinputlisting{fonclist_02_a.py}}
-	\mauvaise{\lstinputlisting{fonclist_02_b.py}}
-	\mauvaise{\lstinputlisting{fonclist_02_c.py}}
-	\end{reponses}
-\end{question}
-
-}
 
 
 
@@ -433,29 +79,14 @@ Quelle est la fonction qui ne convient pas ?
 	\end{multicols}
 \end{question}
 }
-
-
-
-
-%
-%\begin{question}{bin_}
-%	\begin{multicols}{4}
-%	\begin{reponses}	
-%	\bonne{}
-%	\mauvaise{}
-%	\mauvaise{}
-%	\mauvaise{}
-%	\end{reponses}
-%	\end{multicols}
-%\end{question}
-%}
-
-
-	\melangegroupe{OperationsElementaires}
+\melangegroupe{OperationsElementaires}
 	\restituegroupe{OperationsElementaires}
 
 	\melangegroupe{OperationsArithmetiques}
 	\restituegroupe{OperationsArithmetiques}
+
+\melangegroupe{Fonctions}
+\restituegroupe{Fonctions}
 
 	\melangegroupe{CodageEntiers}
 	\restituegroupe{CodageEntiers}
@@ -480,7 +111,16 @@ Quelle est la fonction qui ne convient pas ?
 	
 	\melangegroupe{StructuresFor}
 	\restituegroupe{StructuresFor}
-	
+
+	\melangegroupe{Listes}
+	\restituegroupe{Listes}
+
 	\melangegroupe{FonctionsEtListes}
 	\restituegroupe{FonctionsEtListes}
+
+	\melangegroupe{ListesComprehension}
+	\restituegroupe{ListesComprehension}
+
+
+	
 \end{document}
