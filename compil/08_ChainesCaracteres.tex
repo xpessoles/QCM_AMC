@@ -80,26 +80,27 @@ Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit sav
 Soit le texte suivant : \lstinline{texte = "Un chasseur sachant chasser doit savoir chasser sans son chien."}. 
 
 Que faut-il mettre à la place des ... pour afficher "sachant"?
-\begin{multicols}{4}	
+%\begin{multicols}{4}	
 	\begin{reponses}	
 	\bonne{\lstinline{print(texte[12:19]}}
 	\mauvaise{\lstinline{print(texte[12:18]}}
 	\mauvaise{\lstinline{print(texte[11:18]}}
 	\mauvaise{\lstinline{print(texte[12]+texte[18])}}
 	\end{reponses}
-	\end{multicols}
+%\end{multicols}
 \end{question}
 
-\begin{question}{str}  % https://www.codingame.com/
+\begin{question}{str08}  % genumsi planchet.d
+Suite au programme ci-dessous, il faut afficher le message suivant : \texttt{je m'appelle prenom et j'ai age ans}.
+\lstinputlisting{str_08.py}
+Quelle instruction doit-on choisir ?
 
-\begin{multicols}{4}	
-	\begin{reponses}	
-	\bonne{}
-	\mauvaise{}
-	\mauvaise{}
-	\mauvaise{}
+	\begin{reponses}
+	\bonne{\lstinline{print("je m'appelle "+prenom+" et j'ai"+str(age)+" ans")}} 
+	\mauvaise{\lstinline{print("je m'appelle "+int(prenom)+" et j'ai "+int(age)+ "ans")}}
+	\mauvaise{\lstinline{print("je m'appelle "+prenom+" et j'ai "+ age+ "ans")}}
+ 	\mauvaise{\lstinline{print("je m'appelle "+prenom+" et j'ai "+int(age)+ "ans")}}
 	\end{reponses}
-	\end{multicols}
 \end{question}
 
 \begin{question}{str}  % genumsi nreveret
