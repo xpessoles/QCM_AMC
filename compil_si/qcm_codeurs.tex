@@ -10,7 +10,7 @@
 
 %\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
 \usepackage[francais,bloc,completemulti]{automultiplechoice} 
-% ensemble : feuille de questions puis feuille de réponse
+% ensemble : feuille de questions et feuille de réponse séparées
 
 \usepackage{multicol}
 
@@ -49,9 +49,13 @@
 %\usepackage[T1]{fontenc}
 
 \begin{document}
+\AMCrandomseed{1233893}
+
+
+\input{01_capteurs}
 
 \setdefaultgroupmode{withoutreplacement} % Mélange des questions groupées
-\input{01_capteurs}
+%\setgroupmode{codeurs}{withoutreplacement}
 
 
 
@@ -69,8 +73,7 @@ Nom et prénom :
 \end{minipage}}}
 
 
-\melangegroupe{codeurs}
-\restituegroupe{codeurs}
+\restituegroupe[2]{codeurs}
 
 }
 
