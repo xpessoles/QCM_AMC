@@ -1,0 +1,77 @@
+\documentclass[a4paper]{article}
+
+% bloc : évite un changement de page
+% completemulti : ajoute une case : aucune bonne réponse
+%\newcommand{\repRel}{../..}
+%\input{\repRel/Style/packages}
+%%\input{\repRel/Style/new_style}
+%\input{\repRel/Style/macros_SII}
+%%\input{\repRel/Style/environment}
+
+%\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
+\usepackage[francais,bloc,completemulti]{automultiplechoice} 
+% ensemble : feuille de questions puis feuille de réponse
+
+\usepackage{multicol}
+
+%% Pour le python %%
+\usepackage{listingsutf8}
+
+\lstset{language=Python,
+  inputencoding=utf8/latin1,
+  breaklines=true,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+  upquote = true,
+  columns=fullflexible,
+  backgroundcolor=\color{gray!10},frame=leftline,rulecolor=\color{gray}}  
+  
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstset{
+     literate=%
+         {é}{{\'e}}1    
+         {è}{{\`e}}1    
+         {ê}{{\^e}}1    
+         {à}{{\`a}}1
+         {â}{{\^a}}1		 
+         {ô}{{\^o}}1    
+         {ù}{{\`u}}1    
+         {î}{{\^i}}1    
+}
+\lstset{inputpath=code}
+
+\usepackage{siunitx}
+%\usepackage[utf8x]{inputenc}
+%\usepackage[T1]{fontenc}
+
+\begin{document}
+
+\setdefaultgroupmode{withoutreplacement} % Mélange des questions groupées
+\input{01_capteurs}
+
+
+
+\exemplaire{3}{
+
+\noindent{\bf TEST Codeurs incrémentaux}
+
+\vspace*{.5cm}
+
+\champnom{\fbox{\begin{minipage}{.5\linewidth}
+Nom et prénom :
+
+\vspace*{.5cm}\namefielddots
+\vspace*{1mm}
+\end{minipage}}}
+
+
+\melangegroupe{codeurs}
+\restituegroupe{codeurs}
+
+}
+
+\end{document}
