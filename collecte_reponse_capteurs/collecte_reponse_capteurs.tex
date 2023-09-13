@@ -9,7 +9,9 @@
 %%\input{\repRel/Style/environment}
 
 %\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
-\usepackage[francais,bloc,completemulti,catalog]{automultiplechoice} %ensemble
+\usepackage[francais,bloc,completemulti]{automultiplechoice} 
+% ensemble : feuille de questions et feuille de réponse séparées
+
 \usepackage{multicol}
 
 %% Pour le python %%
@@ -47,10 +49,27 @@
 %\usepackage[T1]{fontenc}
 
 \begin{document}
+\AMCrandomseed{1233893}
 
-\input{01_capteurs}
 
-\melangegroupe{codeurs}
-\restituegroupe{codeurs}
-	
+\input{../Banque_SI/01_capteurs}
+
+\setdefaultgroupmode{withoutreplacement} % Mélange des questions groupées
+%\setgroupmode{codeurs}{withoutreplacement}
+
+
+
+\exemplaire{40}{
+
+\noindent{\bf TEST Codeurs incrémentaux}
+
+\vspace*{.5cm}
+
+
+
+
+\restituegroupe[4]{codeurs}
+
+}
+
 \end{document}
