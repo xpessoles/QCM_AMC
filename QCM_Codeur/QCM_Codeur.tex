@@ -73,16 +73,28 @@
 
 \AMCdebutFormulaire
 % ENtetes
-
 {\large\bf Feuille de réponses :}
-\hfill \champnom{\fbox{
-\begin{minipage}{.5\linewidth}
- Nom et prénom :
 
- \vspace*{.5cm}\namefielddots
- \vspace*{1mm}
- \end{minipage}
+\vspace{.5cm}
+
+\begin{minipage}[c]{.45\linewidth}
+\AMCcodeGridInt[h]{etu}{2}
+\end{minipage}
+\hfill
+\begin{minipage}[c]{.45\linewidth}
+\champnom{\fbox{
+\begin{minipage}{.9\linewidth}
+Nom et prénom :
+\vspace*{.5cm}\dotfill
+\vspace*{.5cm}\dotfill
+\vspace*{1mm}
+\end{minipage}
 }}
+\end{minipage}
+
+%%%%%%%
+
+
 
 \formulaire
 
