@@ -7,6 +7,5 @@
 *.gz
 ~$QCM.xlsx
 *.cs
-*.pdf
 *.blg
 *.bbl
