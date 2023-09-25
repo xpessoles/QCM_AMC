@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project>
   <after_export>file</after_export>
-  <allocate_ids>0</allocate_ids>
+  <allocate_ids></allocate_ids>
   <annotatedemail>
     <email_subject>Exam result</email_subject>
     <email_text>Please find enclosed your annotated completed answer sheet.
 Regards.</email_text>
     <email_use_html></email_use_html>
   </annotatedemail>
-  <annote_position>marges</annote_position>
+  <annote_position>cases</annote_position>
   <annote_rtl></annote_rtl>
-  <assoc_code></assoc_code>
-  <auto_capture_mode>-1</auto_capture_mode>
+  <assoc_code>etu</assoc_code>
+  <auto_capture_mode>0</auto_capture_mode>
   <code_examen></code_examen>
   <cr>cr</cr>
   <data>data</data>
@@ -38,14 +38,14 @@ Regards.</email_text>
   <filter>latex</filter>
   <filtered_source>DOC-filtered.tex</filtered_source>
   <format_export>ods</format_export>
-  <liste_key></liste_key>
-  <listeetudiants></listeetudiants>
+  <liste_key>Numero</liste_key>
+  <listeetudiants>%HOME/Scans/PTSI2_LISTE_NUM.csv</listeetudiants>
   <maj_bareme>1</maj_bareme>
   <modele_regroupement></modele_regroupement>
   <moteur_latex_b>pdflatex</moteur_latex_b>
   <name_field_type></name_field_type>
   <nom_examen></nom_examen>
-  <nombre_copies>0</nombre_copies>
+  <nombre_copies>48</nombre_copies>
   <note_arrondi>inf</note_arrondi>
   <note_grain>0.5</note_grain>
   <note_max>20</note_max>

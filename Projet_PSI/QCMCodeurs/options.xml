@@ -37,8 +37,8 @@ Regards.</email_text>
   <export_sort>n</export_sort>
   <filter>latex</filter>
   <filtered_source>DOC-filtered.tex</filtered_source>
-  <format_export>List</format_export>
-  <liste_key>﻿Nom</liste_key>
+  <format_export>CSV</format_export>
+  <liste_key>nom</liste_key>
   <listeetudiants>%HOME/liste_classe_psietoile_NUM.csv</listeetudiants>
   <maj_bareme>1</maj_bareme>
   <modele_regroupement></modele_regroupement>
