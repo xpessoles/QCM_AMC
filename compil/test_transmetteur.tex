@@ -1,0 +1,63 @@
+\documentclass[a4paper]{article}
+
+% bloc : évite un changement de page
+% completemulti : ajoute une case : aucune bonne réponse
+%\newcommand{\repRel}{../..}
+%\input{\repRel/Style/packages}
+%%\input{\repRel/Style/new_style}
+%\input{\repRel/Style/macros_SII}
+%%\input{\repRel/Style/environment}
+
+%\usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
+\usepackage[francais,bloc,completemulti,catalog]{automultiplechoice} %ensemble
+\usepackage{multicol}
+
+%% Pour le python %%
+\usepackage{listingsutf8}
+\usepackage{amsmath}
+
+\lstset{language=Python,
+  inputencoding=utf8/latin1,
+  breaklines=true,
+  basicstyle=\ttfamily\small,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+  upquote = true,
+  columns=fullflexible,
+  backgroundcolor=\color{gray!10},frame=leftline,rulecolor=\color{gray}}  
+  
+\definecolor{mygreen}{rgb}{0,0.6,0}
+
+\lstset{
+     literate=%
+         {é}{{\'e}}1    
+         {è}{{\`e}}1    
+         {ê}{{\^e}}1    
+         {à}{{\`a}}1
+         {â}{{\^a}}1		 
+         {ô}{{\^o}}1    
+         {ù}{{\`u}}1    
+         {î}{{\^i}}1    
+}
+\lstset{inputpath=../Banque_Info/code}
+
+%\usepackage[utf8x]{inputenc}
+%\usepackage[T1]{fontenc}
+
+\begin{document}
+\graphicspath{{../Banque_SI/04_transmetteurs/images}}
+\input{../Banque_SI/04_transmetteurs/04_transmetteurs}
+
+
+
+
+
+%\melangegroupe{OperationsElementaires}
+	\restituegroupe{transmetteurs}
+
+
+
+	
+\end{document}
