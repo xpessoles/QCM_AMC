@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <project>
   <after_export>file</after_export>
-  <allocate_ids>0</allocate_ids>
+  <allocate_ids></allocate_ids>
   <annotatedemail>
     <email_subject>Exam result</email_subject>
     <email_text>Please find enclosed your annotated completed answer sheet.
@@ -10,8 +10,8 @@ Regards.</email_text>
   </annotatedemail>
   <annote_position>cases</annote_position>
   <annote_rtl></annote_rtl>
-  <assoc_code></assoc_code>
-  <auto_capture_mode>-1</auto_capture_mode>
+  <assoc_code>etu</assoc_code>
+  <auto_capture_mode>0</auto_capture_mode>
   <code_examen></code_examen>
   <cr>cr</cr>
   <data>data</data>
@@ -38,8 +38,8 @@ Regards.</email_text>
   <filter>latex</filter>
   <filtered_source>DOC-filtered.tex</filtered_source>
   <format_export>ods</format_export>
-  <liste_key></liste_key>
-  <listeetudiants></listeetudiants>
+  <liste_key>num</liste_key>
+  <listeetudiants>%HOME/liste_classe_psietoile_NUM.csv</listeetudiants>
   <maj_bareme>1</maj_bareme>
   <modele_regroupement></modele_regroupement>
   <moteur_latex_b>pdflatex</moteur_latex_b>
