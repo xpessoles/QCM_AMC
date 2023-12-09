@@ -3,10 +3,10 @@
 % bloc : évite un changement de page
 % completemulti : ajoute une case : aucune bonne réponse
 %\newcommand{\repRel}{../..}
-%\input{\repRel/Style/packages}
+%\input{\repRel/Style/packages_v2}
 %%\input{\repRel/Style/new_style}
 %\input{\repRel/Style/macros_SII}
-%%\input{\repRel/Style/environment}
+%\input{\repRel/Style/environment_v2}
 
 \usepackage[francais,bloc,completemulti,ensemble]{automultiplechoice}
 %\usepackage[francais,bloc,completemulti]{automultiplechoice} 
@@ -53,8 +53,9 @@
 \AMCrandomseed{233893}
 \setdefaultgroupmode{withoutreplacement} % Mélange des questions groupées
 
-\graphicspath{{../../Banque_SI/04_transmetteurs/images/}}
-\input{../../Banque_SI/04_transmetteurs/04_transmetteurs.tex}
+\graphicspath{{../Banque_SI/03_hyperstatisme/images/}{../Banque_SI/04_transmetteurs/images/}}
+\input{../Banque_SI/03_hyperstatisme/03_hyperstatisme.tex}
+\input{../Banque_SI/04_transmetteurs/04_transmetteurs.tex}
 
 
 
@@ -63,12 +64,14 @@
 
 \exemplaire{1}{
 % Entetes sujet
-\noindent{\bf QCM -- Transetteurs}
+\noindent{\bf QCM -- Transmetteurs}
 
 \vspace*{.5cm}
 % Questions
 \begin{multicols}{2}
-\restituegroupe[8]{transmetteurs}
+%\restituegroupe[6]{mob}
+%\restituegroupe[4]{hs}
+\restituegroupe[10]{transmetteurs}
 \end{multicols}
 
 \AMCcleardoublepage
@@ -109,7 +112,7 @@ Pour répondre aux questions \textbf{noircir consciencieusement} la réponse sé
 \vspace*{.5cm}
 
 \formulaire
-\AMCcleardoublepage
+
 % 
 }
 
