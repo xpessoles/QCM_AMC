@@ -8,7 +8,7 @@
 Regards.</email_text>
     <email_use_html></email_use_html>
   </annotatedemail>
-  <annote_position>marges</annote_position>
+  <annote_position>cases</annote_position>
   <annote_rtl></annote_rtl>
   <assoc_code></assoc_code>
   <auto_capture_mode>-1</auto_capture_mode>
@@ -45,7 +45,7 @@ Regards.</email_text>
   <moteur_latex_b>pdflatex</moteur_latex_b>
   <name_field_type></name_field_type>
   <nom_examen></nom_examen>
-  <nombre_copies>0</nombre_copies>
+  <nombre_copies>42</nombre_copies>
   <note_arrondi>inf</note_arrondi>
   <note_grain>0.5</note_grain>
   <note_max>20</note_max>
@@ -71,7 +71,7 @@ Regards.</email_text>
 Regards.</email_text>
     <email_use_html></email_use_html>
   </subjectemail>
-  <texsrc>%PROJET/03_QCM_Hs.tex</texsrc>
+  <texsrc>%PROJET/04_QCM_Transmetteurs.tex</texsrc>
   <verdict>%(ID)
 Mark: %s/%m (total score: %S/%M)</verdict>
   <verdict_q>&quot;%s/%m&quot;</verdict_q>
