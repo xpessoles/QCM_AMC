@@ -301,20 +301,74 @@ Soit le schéma suivant. Déterminer l'inertie équivalente ramenée à l'arbre~
 
 
 %%%%%%%%%%%%%%%%%%%
-%\element{inertieeq}{
-%\begin{question}{jeq 10}
-%On note $v$ la vitesse de la charge $M$ selon la direction horizontale. Exprimer $v$ en fonction de 
-%$\omega_{10}$ (en valeur absolue). On note $p$ le pas de la vis.
-%\begin{center}
-%\includegraphics[width=5cm]{fig_07}
-%\end{center}
-%\begin{multicols}{4}
-%	\begin{reponses}	
-%	\mauvaise{$v = \dfrac{ Z_2  }{ Z_1  p } \omega_{10}$}
-%	\mauvaise{$v = \dfrac{Z_2 p}{2 Z_1  \pi } \omega_{10}$}
-%	\mauvaise{$v = \dfrac{2 Z_1 \pi }{ Z_2  p } \omega_{10}$}
-%	\bonne{$v = \dfrac{Z_1 p}{2 Z_2  \pi } \omega_{10}$}
-%	\end{reponses}
-%\end{multicols}
-%\end{question}\\}
-%
+\element{inertieeq}{
+\begin{question}{jeq 16}
+On note $v$ la vitesse de la charge $M$ selon la direction horizontale. On note $p$ le pas de la vis. 
+Exprimer l'inertie équivalente ramenée à l'arbre 1. 
+\begin{center}
+\includegraphics[width=5cm]{fig_07}
+\end{center}
+% \omega_2 = \omega_1 \dfrac{Z_1}{ Z_2}
+% v = \omega_2 \dfrac{p}{2\pi}
+
+% J_1\omega_1^2 + J_2 \omega_2^2 + M v^2
+
+% J_1 + J_2 \left(\dfrac{Z_1}{ Z_2}\right)^2 + M \left(\dfrac{Z_1}{ Z_2} \dfrac{p}{2\pi}\right)^2
+\begin{multicols}{2}
+	\begin{reponses}	
+	\bonne      {$ J_1 + J_2 \left(\dfrac{Z_1}{ Z_2}\right)^2 + M \left(\dfrac{Z_1 p }{  2\pi Z_2} \right)^2$}
+	\mauvaise {$ J_1 + J_2 \left(\dfrac{Z_2}{ Z_1}\right)^2 + M \left(\dfrac{Z_1 p }{  2\pi Z_2} \right)^2$}
+	\mauvaise {$ J_1 + J_2 \left(\dfrac{Z_1}{ Z_2}\right)^2 + M \left(\dfrac{Z_2 p }{  2\pi Z_1} \right)^2$}
+	\mauvaise {$ J_1 + J_2 \left(\dfrac{Z_2}{ Z_1}\right)^2 + M \left(\dfrac{Z_2 p }{  2\pi Z_1} \right)^2$}
+	\end{reponses}
+\end{multicols}
+\end{question}\\}
+
+
+\element{inertieeq}{
+\begin{question}{jeq 17}
+On note $v$ la vitesse de la charge $M$ selon la direction horizontale. On note $p$ le pas de la vis. 
+Exprimer l'inertie équivalente ramenée à l'arbre 2. 
+\begin{center}
+\includegraphics[width=5cm]{fig_07}
+\end{center}
+% \omega_2 = \omega_1 \dfrac{Z_1}{ Z_2}
+% v = \omega_2 \dfrac{p}{2\pi}
+
+% J_1\omega_1^2 + J_2 \omega_2^2 + M v^2
+
+% J_1 + J_2 \left(\dfrac{Z_1}{ Z_2}\right)^2 + M \left(\dfrac{Z_1}{ Z_2} \dfrac{p}{2\pi}\right)^2
+\begin{multicols}{2}
+	\begin{reponses}	
+	\bonne      {$ J_1\left(\dfrac{Z_2}{ Z_1}\right)^2 + J_2 + M \left(\dfrac{ p }{  2\pi} \right)^2$}
+	\mauvaise  {$ J_1\left(\dfrac{Z_1}{ Z_2}\right)^2 + J_2 + M \left(\dfrac{ p }{  2\pi} \right)^2$}
+	\mauvaise  {$ J_1\left(\dfrac{Z_2}{ Z_1}\right)^2 + J_2 + M \left(\dfrac{ 2\pi }{  pas} \right)^2$}
+	\mauvaise {$ J_1\left(\dfrac{Z_1}{ Z_2}\right)^2 + J_2 + M \left(\dfrac{ 2\pi }{  pas} \right)^2$}
+	\end{reponses}
+\end{multicols}
+\end{question}\\}
+
+
+\element{inertieeq}{
+\begin{question}{jeq 18}
+On note $v$ la vitesse de la charge $M$ selon la direction horizontale. On note $p$ le pas de la vis. 
+Exprimer la masse équivalente. 
+\begin{center}
+\includegraphics[width=5cm]{fig_07}
+\end{center}
+% \omega_2 = \omega_1 \dfrac{Z_1}{ Z_2}
+% v = \omega_2 \dfrac{p}{2\pi}
+
+% J_1\omega_1^2 + J_2 \omega_2^2 + M v^2
+
+% J_1 + J_2 \left(\dfrac{Z_1}{ Z_2}\right)^2 + M \left(\dfrac{Z_1}{ Z_2} \dfrac{p}{2\pi}\right)^2
+\begin{multicols}{2}
+	\begin{reponses}	
+           \bonne      {$ J_1\left(\dfrac{2\pi Z_2}{ Z_1 p}\right)^2 + J_2\left(\dfrac{  2\pi}{ p } \right)^2 + M $}
+           \mauvaise  {$ J_1\left(\dfrac{2\pi Z_1}{ Z_2 p}\right)^2 + J_2\left(\dfrac{  2\pi}{ p } \right)^2 + M $}
+           \mauvaise  {$ J_1\left(\dfrac{2\pi Z_1}{ Z_2 p}\right)^2 + J_2\left(\dfrac{  p}{ 2\pi } \right)^2 + M $}
+           \bonne      {$ J_1\left(\dfrac{2\pi Z_2}{ Z_1 p}\right)^2 + J_2\left(\dfrac{  p}{ 2\pi } \right)^2 + M $}
+  	\end{reponses}
+\end{multicols}
+\end{question}\\}
+
