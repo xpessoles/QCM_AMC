@@ -368,7 +368,7 @@ Exprimer la masse équivalente.
            \bonne      {$ J_1\left(\dfrac{2\pi Z_2}{ Z_1 p}\right)^2 + J_2\left(\dfrac{  2\pi}{ p } \right)^2 + M $}
            \mauvaise  {$ J_1\left(\dfrac{2\pi Z_1}{ Z_2 p}\right)^2 + J_2\left(\dfrac{  2\pi}{ p } \right)^2 + M $}
            \mauvaise  {$ J_1\left(\dfrac{2\pi Z_1}{ Z_2 p}\right)^2 + J_2\left(\dfrac{  p}{ 2\pi } \right)^2 + M $}
-           \mauvaise      {$ J_1\left(\dfrac{2\pi Z_2}{ Z_1 p}\right)^2 + J_2\left(\dfrac{  p}{ 2\pi } \right)^2 + M $}
+           \bonne      {$ J_1\left(\dfrac{2\pi Z_2}{ Z_1 p}\right)^2 + J_2\left(\dfrac{  p}{ 2\pi } \right)^2 + M $}
   	\end{reponses}
 %\end{multicols}
 \end{question}\\}
